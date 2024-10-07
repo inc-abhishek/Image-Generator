@@ -29,21 +29,21 @@ function Image() {
       setImage(imageUrl);
       console.log(text);
     }else{
-      alert("Please Enter Search Name");
+      alert("Image Ka Name To De Yaar");
     }
     
   }
   
   return (
-    <div className="w-2/5 mx-auto shadow-lg border mt-10 pb-4 bg-fuchsia-300">
+    <div className="w-2/5 mx-auto shadow-lg border mt-10 pb-4 bg-blue-300">
        <div className="flex flex-col gap-3 ">
-       <p className=" font-medium text-2xl mb-2 text-center pt-2 text-purple-500">Image Generation App </p>
+       <p className=" font-medium text-2xl mb-2 text-center pt-2 text-blue-500">Geek Image </p>
       <input
         type="text"
         onChange={(e) => setText(e.target.value)}
-        className="border border-slate-600 mx-auto w-1/2 py-2 px-4 " placeholder="Enter text"
+        className="border border-slate-600 mx-auto w-1/2 py-2 px-4 " placeholder="Enter text !"
       />
-      <button onClick={() => query(text)} className="bg-purple-600 py-2 px-6 font-medium mb-3 w-44 m-auto hover:bg-gray-600 hover:text-white">Click Me</button>
+      <button onClick={() => query(text)} className="bg-blue-400 py-2 px-6 font-medium mb-3 w-44 m-auto hover:bg-black-200 hover:text-white">Click Me</button>
        </div>
       <div>
       <img src={image} alt="" className="w-full  "  />
